@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAPERUCITA ROJA</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="anime.min.js"></script>
     <!-- Aquí se debe importar la librería de JavaScript solicitada -->
 </head>
 <body style="background: #fff;">
     <div class="forest-bg"></div>
-    <img src="caperucita.svg" alt="Caperucita Roja" class="caperucita">
+    <object id="caperucita-svg" data="caperucita.svg" type="image/svg+xml" class="caperucita"></object>
     <script src="script.js"></script>
+    <video autoplay muted loop class="video-fondo">
+  <source src="bosque.mp4" type="video/mp4">
+</video>
+    
 </body>
 </html>

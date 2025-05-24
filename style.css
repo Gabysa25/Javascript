@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #355c2d 60%, #7ec850 100%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.forest-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    /* Puedes agregar más detalles visuales aquí si lo deseas */
+}
+
+.caperucita {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(2.5); /* Escala x2.5 */
+  bottom: 0;
+  width: 180px;
+  z-index: 2;
+}
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
